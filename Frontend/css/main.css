@@ -880,7 +880,7 @@ footer .footer__bottom__up__link:hover {
 .home__hero .header .header__logo {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1468,7 +1468,7 @@ iframe {
 .skills__wrapper .skills__header span {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1577,7 +1577,7 @@ iframe {
 .story__header .header .header__logo {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1844,7 +1844,7 @@ iframe {
 .customers__wrapper .header .header__logo {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1932,7 +1932,7 @@ iframe {
 .blogs__wrapper .header .header__logo {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2047,7 +2047,7 @@ iframe {
 .menu__wrapper .menu__header span {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2170,7 +2170,7 @@ iframe {
 .menu__wrapper .menu__footer .menu__row .menu__item .menu__info div span {
   width: 18px;
   height: 18px;
-  background-image: url("./Frontend/images/our_chefs/h-icon1.png");
+  background-image: url("/Codelandia-SCSS-Homework/Frontend/images/our_chefs/h-icon1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
