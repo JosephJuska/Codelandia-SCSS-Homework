@@ -1,0 +1,236 @@
+.menu__wrapper {
+    width: 100%;
+    margin: $bs-margin * 4 0;
+
+    .menu__header {
+        width: min(100%, 800px);
+        padding: 0 $bs-padding;
+        margin: 0 auto;
+        margin-bottom: $bs-margin * 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .header__top {
+            font-family: 'Ruthie', sans-serif;
+            color: $third;
+            font-weight: 300;
+        }
+
+        .header__bottom {
+            font-family: 'Abril Fatface', sans-serif;
+            color: $secondary;
+            font-weight: 700;
+        }
+
+        span {
+            width: 18px;
+            height: 18px;
+            background-image: url('./Frontend/images/our_chefs/h-icon1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: $bs-margin 0;
+        }
+
+        p {
+            $grey: #a5a5a5;
+            color: $grey;
+            font-size: 1.25rem;
+        }
+
+        div.menu__controlls {
+            display: flex;
+            gap: 2rem;
+            margin-top: $bs-margin * 3;
+
+            a {
+                color: $secondary;
+                position: relative;
+                transition: all .5s ease;
+                font-weight: 700;
+                font-size: 1.125rem;
+
+                &::before {
+                    content: '';
+                    background-color: $third;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    transition: all .5s ease;
+                }
+
+                &:hover {
+                    color: $third;
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+                &.active {
+                    color: $third;
+
+                    &::before {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu__footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        box-shadow: 0px 0px 52px -15px rgba(0,0,0,0.62);
+        .menu__row {
+            display: flex;
+            &:nth-of-type(even) {
+                .menu__item {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            @media screen and (max-width: 990px) {
+                flex-direction: column;
+            }
+
+            .menu__item {
+                display: flex;
+
+                @media screen and (max-width: 990px) {
+                    flex-direction: row !important;
+
+                    &:last-of-type {
+                        flex-direction: row-reverse !important;
+                    }
+
+                    .menu__info {
+                        padding: ($bs-padding / 4);
+
+                        div {
+                            padding: ($bs-padding / 2);
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 570px) {
+                    flex-direction: column-reverse !important;
+
+                    &:last-of-type {
+                        flex-direction: column-reverse !important;
+                    }
+
+                    .menu__info {
+                        width: 100% !important;
+                    }
+
+                    .menu__img {
+                        width: 100% !important;
+                        height: 200px;
+                    }
+                }
+
+                &:hover {
+                    .menu__img {
+                        div {
+                            opacity: 1;
+                        }
+                    }
+                }
+    
+                .menu__info {
+                    width: 50%;
+                    padding: ($bs-padding / 2);
+                    div {
+                        border: 1px dotted $third;
+                        width: 100%;
+                        padding: $bs-padding;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 1rem;
+    
+                        .header__top {
+                            color: $third;
+                            font-weight: 700;
+                            font-size: 1.25rem;
+                        }
+    
+                        .header__bottom {
+                            color: $secondary;
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                        }
+    
+                        span {
+                            width: 18px;
+                            height: 18px;
+                            background-image: url('./Frontend/images/our_chefs/h-icon1.png');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+    
+                        p {
+                            $grey: #a5a5a5;
+                            color: $grey;
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+    
+                .menu__img {
+                    width: 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: relative;
+
+                    div {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        transition: all .5s ease;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: $secondary;
+                            opacity: 0.7;
+                        }
+
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $third;
+                            color: $primary;
+                            transition: all .5s ease;
+                            z-index: 5;
+                            border-radius: 50%;
+
+                            &:hover {
+                                background-color: $primary;
+                                color: $third;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

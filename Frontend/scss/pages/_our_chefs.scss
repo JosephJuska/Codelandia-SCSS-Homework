@@ -1,0 +1,326 @@
+.chefs__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: $bs-padding * 4 $bs-padding;
+
+    .chefs {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        @media screen and (max-width: 990px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 570px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .chef {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 700;
+            margin-bottom: $bs-margin;
+
+            .chef__img {
+                position: relative;
+                width: 100%;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+
+                div {
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    opacity: 0;
+                    transition: all .5s ease;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $secondary;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.7;
+                    }
+
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        background-color: $third;
+                        color: $primary;
+                        padding: $bs-padding;
+                        z-index: 2;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                &:hover {
+                    div {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            a {
+                color: $secondary;
+                font-size: 1.25rem;
+
+                &:hover {
+                    color: $third;
+                }
+            }
+
+            span {
+                $grey: #66666666;
+                color: $grey;
+            }
+        }
+    }
+}
+
+.testimonials__wrapper {
+    width: 100%;
+    position: relative;
+    margin: $bs-margin * 4 0;
+    margin-top: 0;
+
+    .testimonial__svg__header, .testimonial__svg__footer {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .testimonial__svg__header {
+        top: -2px;
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+    .testimonial__svg__footer {
+        bottom: -2px;
+    }
+
+    .swiper {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $secondary;
+            opacity: 0.7;
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                padding: $bs-padding * 5 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                text-align: center;
+                cursor: grab;
+
+                svg#Capa_1 {
+                    height: 70px;
+                }
+
+                div {
+                    width: min(100%, 1000px);
+                    padding: 0 $bs-padding * 2;
+                    margin-top: $bs-margin;
+
+                    @media screen and (max-width: 470px) {
+                        padding: 0 $bs-padding;
+                    }
+
+                    h1 {
+                        color: $primary;
+                        font-weight: 300;
+                        font-family: 'Ruthie', sans-serif;
+                        margin-bottom: $bs-margin;
+                    }
+    
+                    span {
+                        color: $third;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skills__wrapper {
+    width: 100%;
+    margin: $bs-margin * 4 auto;
+    padding: 0 $bs-padding;
+
+    .skills__header {
+        width: min(100%, 800px);
+        padding: 0 $bs-padding;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .header__top {
+            font-family: 'Ruthie', sans-serif;
+            color: $third;
+            font-weight: 300;
+        }
+
+        .header__bottom {
+            font-family: 'Abril Fatface', sans-serif;
+            color: $secondary;
+            font-weight: 700;
+        }
+
+        span {
+            width: 18px;
+            height: 18px;
+            background-image: url('./Frontend/images/our_chefs/h-icon1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: $bs-margin 0;
+        }
+
+        p {
+            $grey: #a5a5a5;
+            color: $grey;
+            font-size: 1.25rem;
+        }
+    }
+    
+    .skills__footer {
+        width: min(1200px, 100%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0 auto;
+        margin-top: $bs-margin * 2;
+        margin-bottom: $bs-margin * 4;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .skills__meter {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            position: relative;
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            div {
+                width: 100%;
+                background-color: $secondary;
+                height: 10px;
+                border-radius: 40px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 4px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 4px;
+                    background-color: $third;
+                }
+            }
+
+            span {
+                position: absolute;
+                color: $grey;
+                font-size: 0.9rem;
+                font-weight: 700;
+                top: 0;
+            }
+
+            &#skills__meter__1 {
+                div::before {
+                    width: calc(95% - 4px);
+                }
+
+                span {
+                    right: calc(5% - 12px);
+                }
+            }
+
+            &#skills__meter__2 {
+                div::before {
+                    width: calc(80% - 4px);
+                }
+
+                span {
+                    right: calc(20% - 12px);
+                }
+            }
+
+            &#skills__meter__3 {
+                div::before {
+                    width: calc(90% - 4px);
+                }
+
+                span {
+                    right: calc(10% - 12px);
+                }
+            }
+
+            &#skills__meter__4 {
+                div::before {
+                    width: calc(75% - 4px);
+                }
+
+                span {
+                    right: calc(25% - 12px);
+                }
+            }
+        }
+    }
+}

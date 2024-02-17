@@ -1,0 +1,202 @@
+$bs-button-offset: 20px;
+
+section.header__carousel {
+    width: 100%;
+    height: calc(100vh - 40px);
+    min-height: calc(100vh - 40px);
+    @media screen and (max-width: 990px) {
+        height: calc(100vh - 140px);
+        min-height: calc(100vh - 140px);
+    }
+    margin-bottom: $bs-margin * 4;
+
+    .swiper__home {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .swiper-pagination {
+            position: absolute;
+            left: 50%;
+            right: auto;
+            top: auto;
+            bottom: $bs-margin * 2;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 2rem;
+            z-index: 100;
+            height: fit-content;
+
+            @media screen and (max-width: 570px) {
+                gap: 1.25rem;
+
+                span {
+                    width: 15px !important;
+                    height: 15px !important;
+                }
+            }
+
+            span {
+                position: relative;
+                border: 2px solid $primary;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+
+                &.active {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: $primary;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            color: $primary;
+            cursor: pointer;
+            font-size: 1.5rem;
+
+            @media screen and (max-width: 570px) {
+                display: none;
+            }
+        }
+
+        .swiper-button-prev {
+            left: $bs-button-offset * 2;
+            @media screen and (max-width: 768px) {
+                left: $bs-button-offset;
+            }
+        }
+
+        .swiper-button-next {
+            right: $bs-button-offset * 2;
+            @media screen and (max-width: 768px) {
+                right: $bs-button-offset;
+            }
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 0 $bs-padding * 4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $primary;
+                flex-direction: column;
+                gap: 1rem;
+                @media screen and (max-width: 768px) {
+                    padding: 0 $bs-padding * 3;
+                }
+
+                @media screen and (max-width: 570px) {
+                    padding: 0 $bs-padding;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $secondary;
+                    opacity: 0.7;
+                    z-index: 2;
+                }
+
+                .slide__title {
+                    font-family: 'Ruthie', sans-serif;
+                    font-weight: 300;
+                    z-index: 10;
+                    color: $third;
+                    margin-bottom: -$bs-margin;
+                }
+
+                .slide__header {
+                    font-family: 'Abril Fatface', sans-serif;
+                    font-weight: 700;
+                    z-index: 10;
+                    font-size: 5rem;
+                    @media screen and (max-width: 768px) {
+                        font-size: 4rem;
+                    }
+                }
+
+                .slide__text {
+                    z-index: 10;
+                    width: min(100%, 600px);
+                    font-weight: 700;
+                    @media screen and (max-width: 500px) {
+                        display: none;
+                    }
+                }
+
+                .slide__buttons {
+                    z-index: 10;
+                    display: flex;
+                    width: min(100%, 400px);
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    @media screen and (max-width: 500px) {
+                        flex-direction: column;
+                    }
+
+                    .slide__button {
+                        border: 1px solid $primary;
+                        color: $primary;
+                        padding: ($bs-padding / 2) $bs-padding * 2;
+                        font-weight: 700;
+                        border-radius: 40px;
+                        z-index: 10;
+                        margin-top: $bs-margin;
+    
+                        &:hover {
+                            opacity: 1;
+                            border-color: $third;
+                            background-color: $third;
+                        }
+
+                        &.reversed {
+                            background-color: $third;
+                            border-color: $third;
+
+                            &:hover {
+                                border-color: $primary;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+
+                .slide__img {
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

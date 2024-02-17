@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./Frontend/css/main.min.css">
+</head>
+<body>
+    <nav class="navbar__main">
+        <div class="navbar__content">
+            <a href="./index.html" class="navbar__logo"><img src="./Frontend/images/logo-light.png" alt="Steak In Logo"></a>
+            <a href="./index.html" class="navbar__logo__dark"><img src="./Frontend/images/logo-dark.png" alt="Steak In Logo"></a>
+            <button class="navbar__hamburger__button"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navbar__links__wrapper">
+                <li>
+                    <a href="./index.html" class="navbar__link">HOME</a>
+                </li>
+                <li>
+                    <a href="" class="navbar__link navbar__link__dropdown">PAGES</a>
+                    <button class="navbar__dropdown__button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="navbar__dropdown">
+                        <li>
+                            <a href="./story.html">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="./chefs.html">Our Chefs</a>
+                        </li>
+                        <li>
+                            <a href="">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="">Reservation</a>
+                        </li>
+                        <li>
+                            <a href="">FAQs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./menu.html" class="navbar__link">MENU</a>
+                </li>
+                <li>
+                    <a href="" class="navbar__link navbar__link__dropdown">BLOG</a>
+                    <button class="navbar__dropdown__button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="navbar__dropdown">
+                        <li>
+                            <a href="">Blog Grid</a>
+                        </li>
+                        <li>
+                            <a href="">Blog Information</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./shop.html" class="navbar__link active">SHOP</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="navbar__link">CONTACT</a>
+                </li>
+                <li>
+                    <a href="" class="button">BOOK A TABLE</a>
+                </li>
+                <li class="right-group">
+                    <button class="navbar__search__link"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="navbar__cart__link"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="navbar__sidebar__link"><i class="fa-solid fa-bars"></i></button>
+                    <div class="navbar__search">
+                        <div>
+                            <input type="text" placeholder="Enter Keywords...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="navbar__cart">
+                        <a href="">No products in the cart.</a>
+                    </div>
+                    <div class="navbar__sidebar">
+                        <button class="navbar__sidebar__x"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="sidebar__posts">
+                            <h3>Recent Posts</h3>
+                            <div class="sidebar__recent">
+                                <div class="sidebar__post">
+                                    <a href=""><img src="./Frontend/images/blog/blog4-300x300.jpg" alt=""></a>
+                                    <div>
+                                        <p>October 12th, 2018</p>
+                                        <a href="">The Great Monday Breakfast</a>
+                                    </div>
+                                </div>
+                                <div class="sidebar__post">
+                                    <a href=""><img src="./Frontend/images/blog/blog3-300x300.jpg" alt=""></a>
+                                    <div>
+                                        <p>October 12th, 2018</p>
+                                        <a href="">The Great Sauces Ever!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__instagram">
+                            <h3>Instagram</h3>
+                            <div></div>
+                        </div>
+                        <div class="sidebar__tags">
+                            <h3>Tag Cloud</h3>
+                            <div>
+                                <a href="">Awesome</a>
+                                <a href="">Business</a>
+                                <a href="">Coorporate</a>
+                                <a href="">Fresh</a>
+                                <a href="">Modern</a>
+                                <a href="">Responsive</a>                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header style="background-image: url(./Frontend/images/shop/shop-pagetitle.jpg)">
+        <div class="header__content">
+            <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="128.125" height="13.5" viewBox="0 0 128.125 13.5"> <path fill="#fff" data-name="Divder Down" d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z" transform="translate(-735.938 -518)"></path></svg>
+            <h1 class="header__page">Discover</h1>
+            <h1 class="header__title">Our Products</h1>
+            <p><a href="./index.html">Home</a> / <span>Shop</span></p>
+        </div>
+    </header>
+    <main>
+        <section class="shop__wrapper">
+            <div class="shop__header">
+                <p>Showing 1-12 of 13 results</p>
+                <div>
+                    <span>Sort by latest</span>
+                    <button class="shop__selection__button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="shop__selection">
+                        <li><a href="">Sort by popularity</a></li>
+                        <li><a href="">Sort by average rating</a></li>
+                        <li><a href="" class="active">Sort by latest</a></li>
+                        <li><a href="">Sort by price: low to high</a></li>
+                        <li><a href="">Sort by price: high to low</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop__items">
+                <div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image10-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Mexican Cheese Burger</a>
+                    <span>£26.95</span>
+                </div>
+                <div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image11-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Oyster With Hot Sauce</a>
+                    <span>£50.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image12-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Honey Pancakes</a>
+                    <span>£11.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image13-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Sweet Fruits Toast</a>
+                    <span>£9.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image9-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Grilled American Fillet</a>
+                    <span>£9.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image8-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Roast Sea Trout</a>
+                    <span>£38.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image7-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Grilled Seafood Paella</a>
+                    <span>£34.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image6-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Meat Ball Soup</a>
+                    <span>£25.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image5-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Mexican Cheese Burger</a>
+                    <span>£26.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image4-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Oyster With Hot Sauce</a>
+                    <span>£50.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image3-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Honey Pancakes</a>
+                    <span>£11.95</span>
+                </div><div class="shop__item">
+                    <div class="shop__item__img">
+                        <img src="./Frontend/images/shop/items/steakin-image2-550x652.jpg" alt="Mexican Cheese Burger Image">
+                        <div>
+                            <button class="shop__item__add">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <a href="">Sweet Fruits Toast</a>
+                    <span>£9.95</span>
+                </div>
+            </div>
+            <div class="shop__controlls">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <svg class="footer__top__svg" xmlns="http://www.w3.org/2000/svg" width="128.125" height="13.5" viewBox="0 0 128.125 13.5"> <path data-name="Divder Down" d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z" transform="translate(-735.938 -518)" fill="#212529"></path> </svg>
+        <div class="footer__top">
+          <div class="footer__top__content footer__top__socials__wrapper">
+            <h3>FOLLOW US</h3>
+            <div class="footer__top__socials">
+              <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="" class="social"><i class="fa-brands fa-twitter"></i></a>
+              <a href="" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="" class="social"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="footer__top__content footer__top__info__wrapper">
+            <a href="./index.html"><img src="./Frontend/images/logo-light.png" alt="Steak In Logo"></a>
+            <p>Steak In has the perfect place to enjoy fine food and great cocktails with excellent service, in comfortable atmospheric surroundings. We have a soft dining room, combined with an open kitchen, coffee take out bar.</p>
+          </div>
+          <div class="footer__top__content footer__top__newsletter__wrapper">
+            <h3>NEWSLETTER</h3>
+            <div>
+              <input type="text" placeholder="subscribe our newsletter">
+              <button>JOIN</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>2 AlBahr St, Tanta, Egypt - 002 01065370701 - support@farost.net</p>
+          <p>© 2024. Steak In, With Love by <a href="">Farost</a></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="107.688" height="22" viewBox="0 0 107.688 22"> <path d="M846.553,2435.83m7.29-153.83c-5.374-1.5-11.811-3.3-11.811-3.3a93.218,93.218,0,0,1-16.538-6.95l-17.618-9.92c-4.332-2.44-11.419-2.44-15.751,0l-17.619,9.92a93.924,93.924,0,0,1-16.537,6.95s-6.431,1.8-11.8,3.3" transform="translate(-746.156 -2260)" fill="#1b1b1b"></path></svg>
+          <a href="" class="footer__bottom__up__link"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </div>
+    </footer>
+    <script src="./Frontend/js/navbar.js"></script>
+    <script src="./Frontend/js/shop.js"></script>
+</body>
+</html>

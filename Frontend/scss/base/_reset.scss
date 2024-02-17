@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&family=Ruthie&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $bs-font-size;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: $bs-padding;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+button, input, select, textarea {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3.5rem;
+}

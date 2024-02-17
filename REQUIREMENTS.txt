@@ -1,0 +1,27 @@
+https://demo.farost.net/steakin/
+
+PAGES:
+Home
+Our Story
+Our Chefs
+Menu Board
+Contact
+Shop Full Width
+
+TODO:
+
+Structure:
+Seven One
+
+Layout:
+Footer v
+Navbar v (Maybe animation)
+Header v
+
+Pages:
+Contact v
+Shop v
+Our Chefs v (Maybe animation)
+Menu Board v (Maybe animation)
+Our Story - In progress
+Home
