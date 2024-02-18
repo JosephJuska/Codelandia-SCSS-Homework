@@ -446,18 +446,18 @@
     .blogs {
         width: min(100%, 1200px);
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        overflow-x: hidden;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 2rem;
 
-        @media screen and (max-width: 990px) {
-            grid-template-columns:  repeat(2, 1fr);
-        }
+        // @media screen and (max-width: 990px) {
+        //     grid-template-columns:  repeat(2, 1fr);
+        // }
 
-        @media screen and (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
+        // @media screen and (max-width: 768px) {
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
         .blog {
             display: flex;
             flex-direction: column;

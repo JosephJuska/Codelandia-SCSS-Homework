@@ -192,6 +192,16 @@
                     background-position: center;
                     position: relative;
 
+                    span {
+                        position: absolute;
+                        background-color: $third;
+                        color: $primary;
+                        top: $bs-margin;
+                        left: $bs-margin;
+                        font-weight: 700;
+                        padding: ($bs-padding / 4) ($bs-padding / 2);
+                    }
+
                     div {
                         position: absolute;
                         width: 100%;

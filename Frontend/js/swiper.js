@@ -31,7 +31,7 @@ const swiperBadge = new Swiper('.swiper__badges', {
     grabCursor: true,
 
     autoplay: {
-        delay: 5000,
+        delay: 2500,
     },
 
     centeredSlides: true,
@@ -47,8 +47,9 @@ const swiperBadge = new Swiper('.swiper__badges', {
         },
 
         900: {
-        slidesPerView: 7,
-        spaceBetween: 30
+        slidesPerView: 6,
+        spaceBetween: 30,
+        centeredSlides: false,
         }
     }
   
@@ -78,6 +79,10 @@ const swiperCustomer = new Swiper('.swiper__customers', {
 
     slidesPerView: 1,
     spaceBetween: 80,
+
+    autoplay: {
+        delay: 2500,
+    },
   
     breakpoints: {
         768: {
@@ -127,4 +132,28 @@ const swiperHome = new Swiper('.swiper__home', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
+
+const swiperBlogs = new Swiper('.blogs', {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+
+    centeredSlides: true,
+
+    slidesPerView: 1,
+    spaceBetween: 80,
+  
+    breakpoints: {
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: false,
+        },
+
+        900: {
+        slidesPerView: 3,
+        spaceBetween: 40
+        }
+    }
 });
