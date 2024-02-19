@@ -70,7 +70,7 @@ section.header__carousel .swiper__home .swiper-pagination {
   transform: translateX(-50%);
   display: flex;
   gap: 2rem;
-  z-index: 100;
+  z-index: 5;
   height: fit-content;
 }
 @media screen and (max-width: 570px) {
@@ -105,7 +105,7 @@ section.header__carousel .swiper__home .swiper-button-prev, section.header__caro
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 5;
   color: #ffffff;
   cursor: pointer;
   font-size: 1.5rem;
@@ -176,14 +176,14 @@ section.header__carousel .swiper__home .swiper-wrapper .swiper-slide::before {
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__title {
   font-family: "Ruthie", sans-serif;
   font-weight: 300;
-  z-index: 10;
+  z-index: 5;
   color: #bb9356;
   margin-bottom: -20px;
 }
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__header {
   font-family: "Abril Fatface", sans-serif;
   font-weight: 700;
-  z-index: 10;
+  z-index: 5;
   font-size: 5rem;
 }
 @media screen and (max-width: 768px) {
@@ -192,7 +192,7 @@ section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__hea
   }
 }
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__text {
-  z-index: 10;
+  z-index: 5;
   width: min(100%, 600px);
   font-weight: 700;
 }
@@ -202,7 +202,7 @@ section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__tex
   }
 }
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__buttons {
-  z-index: 10;
+  z-index: 5;
   display: flex;
   width: min(100%, 400px);
   justify-content: center;
@@ -220,7 +220,7 @@ section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__but
   padding: 10px 40px;
   font-weight: 700;
   border-radius: 40px;
-  z-index: 10;
+  z-index: 5;
   margin-top: 20px;
 }
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__buttons .slide__button:hover {
@@ -237,7 +237,7 @@ section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__but
   background-color: transparent;
 }
 section.header__carousel .swiper__home .swiper-wrapper .swiper-slide .slide__img {
-  z-index: 10;
+  z-index: 5;
 }
 
 header {
@@ -411,6 +411,7 @@ nav.navbar__main .navbar__content ul {
 nav.navbar__main .navbar__content ul.navbar__links__wrapper.active {
   display: flex;
   padding: 20px;
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.15);
 }
 nav.navbar__main .navbar__content ul li {
   position: relative;
