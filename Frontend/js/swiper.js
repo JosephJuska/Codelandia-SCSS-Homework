@@ -117,6 +117,7 @@ const swiperHome = new Swiper('.swiper__home', {
     slidesPerView: 1,
     speed: 1000,
     effect: 'fade',
+    allowTouchMove: false,
 
     autoplay: {
         delay: 5000,

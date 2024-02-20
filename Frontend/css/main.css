@@ -1159,6 +1159,12 @@ footer .footer__bottom__up__link:hover {
   border-radius: 40px;
   color: #bb9356;
   font-weight: 700;
+  text-align: center;
+}
+@media screen and (max-width: 570px) {
+  .menu__wrapper.home .menu__button {
+    width: 100%;
+  }
 }
 .menu__wrapper.home .menu__button:hover {
   opacity: 1;
@@ -2250,6 +2256,8 @@ iframe {
 }
 .menu__wrapper .menu__header div.menu__controlls {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-top: 60px;
 }

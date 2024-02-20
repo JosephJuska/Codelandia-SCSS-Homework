@@ -338,6 +338,10 @@
         border-radius: 40px;
         color: $third;
         font-weight: 700;
+        text-align: center;
+        @media screen and (max-width: 570px) {
+            width: 100%;
+        }
 
         &:hover {
             opacity: 1;
